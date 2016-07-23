@@ -4,7 +4,7 @@ var gulp = require('gulp'),
 
 const debugMode = false;
 
-gulp.task('publish', function() {
+gulp.task('publish',['build'], function() {
 
 	var aws;
 	try {
