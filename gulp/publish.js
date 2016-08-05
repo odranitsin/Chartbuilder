@@ -4,14 +4,15 @@ var gulp = require('gulp'),
 
 const debugMode = false;
 
-gulp.task('publish',['build'], function() {
+gulp.task('publish',['build'], function(done) {
 
 	var aws;
 	try {
-		aws = require('../config.json').AWS;
+		aws = require('./aws-config.json').AWS;
 	}
 	catch (ex) {
 		console.log('>>> no config.json found', ex);
+		done();
 	}
 
 	var publisher = awspublish.create({
