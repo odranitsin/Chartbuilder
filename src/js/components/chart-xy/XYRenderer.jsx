@@ -783,7 +783,7 @@ function drawXY(el, state) {
 						ypos: numericSettings ? state.dimensions.height - state.padding.bottom + state.styleConfig.overtick_bottom : 0,
 						xval: numericSettings ? scale.numericSettings.domain[0] : 0,
 						text: numericSettings ? numericSettings.suffix : "",
-						dy: "1.6em"
+						dy: "-4em"
 					}]
 				})
 

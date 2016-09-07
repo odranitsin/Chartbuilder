@@ -24,9 +24,9 @@ var ChartConfig = require("../ChartConfig");
 * @property {object} padding - Distances btwn inner chart elements and container
 */
 var display = {
-	afterTitle: "1.25em", // distance between top of title and top of legend or chart
+	afterTitle: "2em", // distance between top of title and top of legend or chart
 	afterLegend: "0.5em", // distance between top of legend and top of chart
-	blockerRectOffset: 6, // distance between text and background blocker rect
+	blockerRectOffset: 3, // distance between text and background blocker rect
 	paddingPerBar: "0.7em", // extra space around bars
 	barHeight: "0.9em", // height of each bars
 	afterXYBottom: "2em",
@@ -120,7 +120,7 @@ var defaultProps = {
 		chartType: "chartgrid",
 		title: "",
 		source: "",
-		credit: "Made with Chartbuilder",
+		credit: "texty.org.ua",
 		size: "auto"
 	}
 };
