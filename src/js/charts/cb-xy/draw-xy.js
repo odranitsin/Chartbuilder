@@ -18,7 +18,7 @@ var xy_config = {
 		"left": "left",
 		"right": "right"
 	},
-	xAxisShift: -5
+	xAxisShift: -10
 };
 
 var mixin = [
