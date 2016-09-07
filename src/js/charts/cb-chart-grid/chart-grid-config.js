@@ -24,26 +24,26 @@ var ChartConfig = require("../ChartConfig");
 * @property {object} padding - Distances btwn inner chart elements and container
 */
 var display = {
-	afterTitle: "2em", // distance between top of title and top of legend or chart
-	afterLegend: "0.5em", // distance between top of legend and top of chart
+	afterTitle: "3em", // distance between top of title and top of legend or chart
+	afterLegend: "-2em", // distance between top of legend and top of chart
 	blockerRectOffset: 3, // distance between text and background blocker rect
-	paddingPerBar: "0.7em", // extra space around bars
-	barHeight: "0.9em", // height of each bars
+	paddingPerBar: "0.6em", // extra space around bars
+	barHeight: "0.6em", // height of each bars
 	afterXYBottom: "2em",
-	afterXYRight: "0.8em",
-	columnExtraPadding: "0.5em",
+	afterXYRight: "1.9em",
+	columnExtraPadding: "0.1em",
 	bottomPaddingWithoutFooter: "0.5em",
 	xy: require("../cb-xy/xy-config").display,
 	margin: {
-		top: "0.8em",
-		right: "0.25em",
-		bottom: "0.15em",
-		left: "0.25em"
+		top: "1.9em",
+		right: "2em",
+		bottom: "0.5em",
+		left: "1em"
 	},
 	padding: {
-		top: "0.5em",
+		top: 0,
 		right: 0,
-		bottom: "1.5em",
+		bottom: "1em",
 		left: 0
 	}
 };
