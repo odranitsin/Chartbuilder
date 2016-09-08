@@ -1,6 +1,6 @@
-$em_size = 20px
-$em_size_small = 14px
-$em_size_large = 36px
+$em_size = 16px
+$em_size_small = 16px
+$em_size_large = 24px
 
 div.renderer-wrapper
   font-smoothing antialiased
@@ -22,7 +22,7 @@ div.renderer-wrapper
 svg
   &.renderer-svg
     fill $color-bg
-    font-family $font-sans-light
+    font-family $font-sans-bold
     text-rendering optimizeLegibility
     box-sizing border-box
     .svg-background
@@ -37,6 +37,8 @@ svg
     display none
   .xAxis path.domain
     display none
+  .xAxis .tick line
+      display none	
   .axis
     .tick
       font-family $font-sans-light
@@ -54,10 +56,12 @@ svg
         fill none
         stroke $color-chart-gridline
         stroke-width 1px
+        stroke-dasharray 1,3
         shape-rendering crispEdges
       &.zero
         line
           stroke $color-chart-zeroline
+          stroke-dasharray none
       rect
         fill $color-bg
         shape-rendering crispEdges
@@ -97,11 +101,11 @@ svg
     .line, .other-line
       path
         fill none
-        stroke-width 3px
+        stroke-width 3.5px
         stroke-linecap round
         stroke-linejoin round
     .label
-      font-family $font-sans-light
+      font-family $font-sans-bold
 
   .column-label
     fill $color-chart-axis-text
@@ -113,7 +117,7 @@ svg
     shape-rendering crispEdges
 
 .svg-text
-  font-family $font-sans-light
+  font-family $font-sans-bold
   font-size $em_size
 
   tspan
@@ -128,12 +132,16 @@ svg
       font-style italic
 
   &.svg-text-credit
-    font-size $em_size*0.6
+    font-family $font-sans
+    font-size $em_size*0.8
     fill $color-chart-meta
     text-anchor start
+    text-transform uppercase	
   &.svg-text-source
-    font-size $em_size*0.6
+    font-family $font-sans
+    font-size $em_size*0.8
     fill $color-chart-meta
+    text-transform uppercase	
     //text
       //dominant-baseline central
     &.left
@@ -142,7 +150,11 @@ svg
       text-anchor end
   &.svg-text-title
     fill $color-body-text
-    font-family $font-sans
+    font-family $font-sans-bold
+    font-size $em_size_large
+  &.svg-text-sub
+    fill $color-chart-title-text
+    font-family $font-sans-bold
     font-size $em_size
 
 .svg-source-pipe
@@ -152,7 +164,7 @@ svg
 
 .svg-label-text
   font-size $em_size
-  font-family $font-sans-light
+  font-family $font-sans-bold
   &.draggable
     cursor move
 
@@ -174,16 +186,16 @@ svg
     .margins
       .line, .other-line
         path
-          stroke-width 3px
+          stroke-width 3.5px
 
   .svg-text
     font-size $em_size
     &.svg-text-credit
-      font-size $em_size*0.6
+      font-size $em_size*0.8
     &.svg-text-source
-      font-size $em_size*0.6
+      font-size $em_size*0.8
     &.svg-text-title
-      font-size $em_size
+      font-size $em_size_large
 
 .small
   .em-size
@@ -194,7 +206,7 @@ svg
     .margins
       .line, .other-line
         path
-          stroke-width 2px
+          stroke-width 3px
 
   .svg-text
     font-size $em_size_small
@@ -221,7 +233,7 @@ svg
     .margins
       .line, .other-line
         path
-          stroke-width 4px
+          stroke-width 3.5px
 
   .svg-text
     font-size $em_size

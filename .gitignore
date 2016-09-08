@@ -6,6 +6,7 @@ build
 .idea
 .tmp
 .lvimrc
+*.swp
 npm-debug.log
 bower_components/
 src/fonts

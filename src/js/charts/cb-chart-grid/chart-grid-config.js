@@ -10,6 +10,7 @@ var ChartConfig = require("../ChartConfig");
 * @static
 * @memberof chart_grid_config
 * @property {Nem|number} afterTitle - Distance btwn top of title and top of legend or chart
+* @property {Nem|number} afterSub - Distance btwn top of sub and top of legend or chart
 * @property {Nem|number} afterLegend - Distance btwn top of legend and top of chart
 * @property {Nem|number} blockerRectOffset - Distance btwn text of axis and its background blocker
 * @property {Nem|number} paddingBerBar - Space btwn two bars in a bar grid
@@ -24,26 +25,27 @@ var ChartConfig = require("../ChartConfig");
 * @property {object} padding - Distances btwn inner chart elements and container
 */
 var display = {
-	afterTitle: "1.25em", // distance between top of title and top of legend or chart
-	afterLegend: "0.5em", // distance between top of legend and top of chart
-	blockerRectOffset: 6, // distance between text and background blocker rect
-	paddingPerBar: "0.7em", // extra space around bars
-	barHeight: "0.9em", // height of each bars
-	afterXYBottom: "2em",
-	afterXYRight: "0.8em",
-	columnExtraPadding: "0.5em",
+	afterTitle: "2.8em", // distance between top of title and top of legend or chart
+	afterSub: "0em", // distance between top of sub and top of legend or chart
+	afterLegend: 0, // distance between top of legend and top of chart
+	blockerRectOffset: 3, // distance between text and background blocker rect
+	paddingPerBar: "0.6em", // extra space around bars
+	barHeight: "0.6em", // height of each bars
+	afterXYBottom: "0.5em",
+	afterXYRight: "1.5em",
+	columnExtraPadding: 0,
 	bottomPaddingWithoutFooter: "0.5em",
 	xy: require("../cb-xy/xy-config").display,
 	margin: {
-		top: "0.8em",
-		right: "0.25em",
-		bottom: "0.15em",
-		left: "0.25em"
+		top: "1.5em",
+		right: "2em",
+		bottom: "0.5em",
+		left: "1em"
 	},
 	padding: {
-		top: "0.5em",
+		top: 0,
 		right: 0,
-		bottom: "1.5em",
+		bottom: "0.5em",
 		left: 0
 	}
 };
@@ -119,8 +121,9 @@ var defaultProps = {
 		id: null,
 		chartType: "chartgrid",
 		title: "",
+		sub: "",
 		source: "",
-		credit: "Made with Chartbuilder",
+		credit: "texty.org.ua",
 		size: "auto"
 	}
 };
