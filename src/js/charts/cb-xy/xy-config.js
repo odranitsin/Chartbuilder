@@ -33,16 +33,16 @@ var now = new Date();
 */
 
 var display = {
-	labelRectSize: "0.6em",
+	labelRectSize: "0.4em",
 	labelXMargin: "0.6em",
-	labelTextMargin: "0.3em",
+	labelTextMargin: "0.2em",
 	labelRowHeight: "1.2em",
 	afterTitle: "1.5em",
 	afterSub: "2.2em",
 	afterLegend: "1.6em",
-	blockerRectOffset: "0.3em",
+	blockerRectOffset: "0.5em",
 	columnPaddingCoefficient: 0.3,
-	minPaddingOuter: "1em",
+	minPaddingOuter: "2em",
 	bottomPaddingWithoutFooter: "3em",
 	aspectRatio: {
 		wide: (12 / 16),

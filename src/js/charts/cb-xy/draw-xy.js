@@ -18,7 +18,7 @@ var xy_config = {
 		"left": "left",
 		"right": "right"
 	},
-	xAxisShift: -10
+	xAxisShift: -10 // here you change shift for labels in X axis
 };
 
 var mixin = [
@@ -266,9 +266,9 @@ var using = {
 			.r(function() {
 				// TODO: remove this hardcoding
 				if (this.width > 600) {
-					return 3;
+					return 6;
 				} else {
-					return 2;
+					return 5;
 				}
 			});
 
